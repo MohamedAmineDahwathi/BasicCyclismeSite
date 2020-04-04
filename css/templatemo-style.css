@@ -224,8 +224,10 @@ p, address {
 }
 
 .parallax-window {
+  background-image: url('../img/simple-cyclisme.jpg');
+  background-size: cover;
   min-height: 460px;
-  background: transparent;
+  object-fit: cover;
   position: relative;
 }
 
@@ -247,7 +249,7 @@ p, address {
   bottom: 0;
   left: 0;
   width: 100%;
-  color: white;
+  color: black;
   z-index: 1000;
 }
 
@@ -307,9 +309,10 @@ p, address {
 }
 
 .tm-nav-link {
-  color: white;
+  color: black;
   text-decoration: none;
   padding-bottom: 10px;
+  font-size: large;
 }
 
 .tm-nav-link.active,
@@ -326,7 +329,7 @@ p, address {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 30px;
-}
+}   
 
 .tm-gallery {
   margin-bottom: 80px;
@@ -391,7 +394,9 @@ p, address {
 }
 
 .tm-gallery-img {
-  margin-bottom: 20px;
+  margin-bottom: 20px; 
+  width: 238.656px;
+  height: 238.656px;
 }
 
 .tm-gallery-title {
@@ -399,6 +404,7 @@ p, address {
   font-weight: 400;
   color: #1A6692;
   margin-bottom: 15px;
+  text-decoration: none;
 }
 
 .tm-gallery-description {
@@ -894,4 +900,62 @@ address {
 }
 .video-card:hover .video-title {
   opacity: 0;
+}
+.author {
+  display: block;
+  float: right;
+  font-weight: bold;
+}
+
+.tm-section-info {
+  color: black;
+  font-size: 2rem;
+  font-weight: 200;
+}
+.news {
+  margin-left: 30px;
+}
+
+
+#actualites {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: 40px auto;
+}
+
+#actualites td, #actualites th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: #454545;
+}
+
+#actualites tr:nth-child(even){background-color: #f2f2f2;}
+
+#actualites tr:hover {background-color: #ddd;}
+
+#actualites th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+table a{
+  text-decoration: none;
+  white-space: nowrap;
+  width: 240px;
+  height: 22px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #454545;
+}
+span.category {
+  font-weight: bold;
+  padding: 0px 4px;
+}
+.voire {
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 10px;
 }
